@@ -1,0 +1,246 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --lime: #a5ff00; 
+  --font-main: 'Segoe UI', sans-serif; 
+}
+
+* {
+     text-shadow: 0 0 5px var(--lime);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titlesize {
+  font-size: 3rem;
+  color: var(--lime);
+  text-shadow: 0 0 10px var(--lime);
+  margin-top: 20px;
+}
+
+#contact-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--lime);
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px var(--lime);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: swivel 5s ease-in-out infinite;
+}
+
+#contact-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--lime);
+}
+
+#github-button {
+  position: fixed;
+  top: 70px; 
+  right: 20px;
+  background-color: var(--lime);
+  color: var(--black);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px var(--lime);
+  transition: transform 0.2s ease, box-shadow 0.9s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  animation: swivel 5s ease-in-out infinite;
+}
+
+#github-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--lime);
+}
+
+#gallery {
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.image-box {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(165, 255, 0, 0.1);
+}
+
+.image-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px var(--lime);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-box a {
+  display: block;
+  margin-top: 12px;
+  color: var(--lime);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#about {
+  background-color: rgba(165, 255, 0, 0.1); 
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(165, 255, 0, 0.2);
+}
+
+#about img {
+  width: 150px;          
+  max-width: 40vw;       
+  height: auto;          
+  border-radius: 30%;    
+  display: block;
+  margin: 0 auto 20px;   
+  box-shadow: 0 0 10px var(--lime); 
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--lime);
+  text-shadow: 0 0 5px var(--lime);
+  font-weight: 900;
+}
+
+#about h3 {
+  font-size: 1.6rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#about h4 {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: var(--lime);
+  font-weight: 600;
+  border-bottom: 2px solid var(--lime);
+  padding-bottom: 5px;
+  max-width: fit-content;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: var(--white);
+  text-shadow: 0 0 3px var(--lime);
+}
+
+#about a {
+  color: var(--lime);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#about a:hover {
+  color: var(--white);
+  text-shadow: 0 0 8px var(--lime);
+  cursor: pointer;
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.swivel {
+  animation: swivel 2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  #contact-button, #github-button {
+    top: auto;  /* reset fixed top */
+    bottom: 20px; /* move buttons near bottom */
+    right: 20px;
+    width: 120px;
+    font-size: 1rem;
+  }
+
+  #github-button {
+    bottom: 70px; /* stack GitHub button above contact */
+  }
+
+  #gallery .image-container {
+    gap: 20px;
+  }
+
+  #gallery .image-box {
+    width: 100%; /* full width on small screens */
+  }
+
+  #about {
+    margin: 20px 10px;
+    padding: 20px 15px;
+  }
+
+  #about img {
+    width: 100px;
+    max-width: none;
+    border-radius: 50%; /* circular profile pic */
+  }
+}
