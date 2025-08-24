@@ -79,6 +79,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   text-shadow: 3px 3px 1px black;
+  animation: wave 15s infinite;
 }
 
 #firstart {
@@ -87,4 +88,19 @@ body {
   border-color: teal;
   margin-top: 2vh;
   padding-bottom: 2vh;
+}
+
+.skelly {
+  border: solid;
+  margin-left: 150px;
+
+}
+
+
+@keyframes wave {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
 }
