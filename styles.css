@@ -50,6 +50,25 @@ body {
   box-shadow: 0 0 20px var(--lime);
 }
 
+#blog-button {
+  position: fixed;
+  top: 120px; 
+  right: 20px;
+  background-color: var(--lime);
+  color: var(--black);
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px var(--lime);
+  transition: transform 0.2s ease, box-shadow 0.9s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  animation: swivel 5s ease-in-out infinite;
+}
+
 #github-button {
   position: fixed;
   top: 70px; 
@@ -70,6 +89,10 @@ body {
 }
 
 #github-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--lime);
+}
+#blog-button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--lime);
 }
