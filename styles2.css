@@ -68,6 +68,7 @@ body {
   margin-bottom: 6vh;
   color: pink;
   font-weight: 400;
+  text-shadow: 4px 4px 4px #000000;
 }
 
 .articlep {
