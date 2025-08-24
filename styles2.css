@@ -82,8 +82,8 @@ body {
 }
 
 #firstart {
-  border-top: solid;
-  border-bottom: solid;
+  border-top: double;
+  border-bottom: double;
   border-color: teal;
   margin-top: 2vh;
   padding-bottom: 2vh;
