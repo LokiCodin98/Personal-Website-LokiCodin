@@ -41,6 +41,9 @@ body {
 
 a {
   color: green;
+  margin: auto;
+  text-align: center;
+  display: block;
 }
 .newsh {
   font-size: 3em;
