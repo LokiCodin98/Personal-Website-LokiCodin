@@ -28,6 +28,8 @@ body {
   margin-top: 20px;
 }
 
+
+
 #contact-button {
   position: fixed;
   top: 20px;
@@ -236,16 +238,24 @@ body {
     padding: 10px;
   }
 
-  #contact-button, #github-button {
-    top: auto;  /* reset fixed top */
-    bottom: 20px; /* move buttons near bottom */
+  #contact-button, #github-button{
+    top: auto; 
+    bottom: 20px; 
     right: 20px;
     width: 120px;
     font-size: 1rem;
   }
 
+  #blog-button {
+    top: auto;  
+    bottom: 120px; 
+    right: 20px;
+    width: 100px;
+    font-size: 1rem;
+  }
+
   #github-button {
-    bottom: 70px; /* stack GitHub button above contact */
+    bottom: 70px; 
   }
 
   #gallery .image-container {
@@ -253,7 +263,7 @@ body {
   }
 
   #gallery .image-box {
-    width: 100%; /* full width on small screens */
+    width: 100%; 
   }
 
   #about {
@@ -264,6 +274,6 @@ body {
   #about img {
     width: 100px;
     max-width: none;
-    border-radius: 50%; /* circular profile pic */
+    border-radius: 50%; 
   }
 }
