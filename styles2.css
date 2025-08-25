@@ -92,7 +92,8 @@ body {
 
 .skelly {
   border: solid;
-  margin-left: 150px;
+  margin: auto;
+  display: block;
 
 }
 
