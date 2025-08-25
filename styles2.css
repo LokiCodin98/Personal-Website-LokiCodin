@@ -25,7 +25,7 @@ body {
   color: var(--color-white);
   border: double;
   width: 70vw;
-  height: 200vw;
+  height: 100%;
   background-color: var(--color-gray-dark);
   margin: 5vh auto;
 }
@@ -37,6 +37,10 @@ body {
   border-bottom: double;
   border-top: double;
   text-shadow: 2px 2px 4px white;
+}
+
+a {
+  color: green;
 }
 .newsh {
   font-size: 3em;
@@ -104,4 +108,52 @@ body {
   50% { transform: translateY(0); }
   75% { transform: translateY(5px); }
   100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+  #background {
+    width: 95vw;
+    height: auto; /* let content decide height */
+  }
+
+  #header {
+    height: auto;
+    padding: 2vh 1vw;
+  }
+
+  .newsh {
+    font-size: 2em;
+  }
+
+  .newsp {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+
+  .articlep {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1em;
+  }
+
+  .skelly {
+    width: 150px;
+    height: auto;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #background {
+    width: 85vw;
+  }
+
+  .newsh {
+    font-size: 2.5em;
+  }
+
+  .articlep {
+    font-size: 1.05em;
+  }
 }
