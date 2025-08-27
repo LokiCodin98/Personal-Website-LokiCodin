@@ -18,7 +18,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+h1, h2, h3, h4 {
   text-align: center;
+  margin: auto;
+}
+
+a {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
 }
 
 .titlesize {
@@ -27,8 +41,6 @@ body {
   text-shadow: 0 0 10px var(--lime);
   margin-top: 20px;
 }
-
-
 
 #contact-button {
   position: fixed;
@@ -98,6 +110,8 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--lime);
 }
+
+
 
 #gallery {
   padding: 40px 20px;
