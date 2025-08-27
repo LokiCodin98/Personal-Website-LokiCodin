@@ -145,6 +145,14 @@ a {
   padding-bottom: 2vh;
 }
 
+#fourthart {
+  border-top: double;
+  border-bottom: double;
+  border-color: yellow;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 .skelly {
   border: solid;
   margin: auto;
