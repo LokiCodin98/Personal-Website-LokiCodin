@@ -1,3 +1,7 @@
+* {
+  font-size: 1.1rem;
+}
+
 :root {
     --color-black: #0d0d0d;
     --color-white: #ffffff;
@@ -85,7 +89,7 @@ a {
 
 .newsp {
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 1.0em;
   text-align: center;
   margin-top: -1vh;
   margin-bottom: 2vh;
