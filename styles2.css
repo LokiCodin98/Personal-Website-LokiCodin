@@ -153,6 +153,14 @@ a {
   padding-bottom: 2vh;
 }
 
+#fithart {
+  border-top: double;
+  border-bottom: double;
+  border-color: pink;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 .skelly {
   border: solid;
   margin: auto;
