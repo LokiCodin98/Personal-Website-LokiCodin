@@ -5,17 +5,16 @@
 :root {
     --color-black: #0d0d0d;
     --color-white: #ffffff;
-    --color-terquoise: #7EFCFA;
+    --color-green: #1a6e31;
     --color-gray-dark: #222222;
-    --color-purple: #854B99;
 }
 
 body {
   background-color: var(--color-black);
   background-image: repeating-linear-gradient(
     135deg,
-    var(--color-white), 
-    var(--color-purple) 1px,
+    var(--color-green), 
+    var(--color-green) 2px,
     var(--color-black) 2px,
     var(--color-black) 4px
   );
@@ -101,11 +100,8 @@ a {
   text-align: center;
   margin-top: 2vh;
   margin-bottom: 1vh;
-  color:  var(--color-terquoise);
-  text-shadow: 2px 2px 4px gold, 0 0 10px gold;
-  font-weight: 600;
-  animation: wave 10s infinite;
-
+  color: var(--color-green);
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .articleuh {
@@ -126,6 +122,7 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   text-shadow: 3px 3px 1px black;
+  animation: wave 15s infinite;
 }
 
 #firstart {
